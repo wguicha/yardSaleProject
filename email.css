@@ -32,6 +32,12 @@ body {
     justify-items: center;
 }
 
+.form-container container-edit {
+
+    justify-items: left;    
+
+}
+
 .logo {
     width: 150px;
     margin-bottom: 48px;
@@ -42,7 +48,6 @@ body {
 .title {
     font-size: var(--lg);
     margin-bottom: 12px;
-    text-align: center;
 }
 
 .subtitle {
@@ -51,14 +56,20 @@ body {
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 32px;
-    text-align: center;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     width: 210px;
-    align-items: center;
+}
+
+
+.form-container p {
+    font-weight: bold;
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .form a {
@@ -82,11 +93,8 @@ body {
     height: 30px;
     font-size: var(--md);
     padding: 6px;
-
-}
-
-.input.email { 
     margin-bottom: 22px;
+
 }
 
 .email-image {
@@ -98,6 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
+    align-self: center;
 }
 
 .email-image img {
@@ -117,6 +126,56 @@ body {
 .resend a {
     color: var(--hospital-green);
     text-decoration: none;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 10px;
+    place-content: center;
+}
+
+.product-card {
+    width: 240px;
+}
+
+.product-card img{
+    width: 100%;
+    height: 240px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.product-info figure {
+    margin: 0;
+}
+
+.product-info figure img {
+    width: 25px;
+    height: 25px;
+
+    
+}
+
+.product-info div p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.product-info div p:nth-child(2) {
+    font-size: var(--sm);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--very-light-pink);
 }
 
 .primary-button {
@@ -152,6 +211,21 @@ body {
 @media (max-width: 400px){
     .logo{
         display: block;
+    }
+
+    .product-card {
+        width: 100px;
+    }
+    
+    .product-card img{
+        width: 100%;
+        height: 100px;
+        border-radius: 20%;
+        object-fit: cover;
+    }
+    .cards-container {
+            grid-template-columns: repeat(auto-fill, 100px);
+
     }
 }
     
