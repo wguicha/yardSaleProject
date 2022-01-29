@@ -263,13 +263,21 @@ body {
     flex-direction: column;
 }
 
+.shopping-cart-title {
+    display: flex;
+}
+
+.shopping-cart-title img {
+    margin: 0px 15px 15px 15px;
+}
+
 .order {
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 16px;
     align-items: center;
     background-color: var(--text-input-field);
-    padding: 10px 24px 15px 24px;
+    padding: 20px 10px;
     border-radius: 8px;
     margin-bottom: 15px;
 }
